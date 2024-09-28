@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Promedio de Notas - Franco Maure</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="simulador.js" defer></script>
+</head>
+<body>
+    <div id="spline-embed">
+        <iframe src='https://my.spline.design/tvatimedoor-6ca3388a9bd09e18f7db3ce943791b0c/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+    <header>
+        <h1>Simulador de Promedio de Notas</h1>
+        <p>Nombre: Franco Maure<br>
+        Desarrollador web estudiante de CoderHouse<br>
+        Curso: JavaScript</p>
+    </header>
+    <main>
+        <h2>Simulador Interactivo</h2>
+        <form id="gradeForm">
+            <label for="subjectCount">Número de Asignaturas:</label>
+            <input type="number" id="subjectCount" name="subjectCount" min="1" required>
+            <button type="button" id="generateFields">Generar Campos de Notas</button>
+            <div id="notesInputs"></div>
+            <button type="submit">Calcular Promedio</button>
+        </form>
+        <div class="result" id="result"></div>
+    </main>
+    
+
+    <footer>
+        <p>Gracias por tu visita! </p>
+        <div id="interactive-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
+            <button id="btn-interact">Interactuar con el fondo</button>
+          </div>
+    </footer>
+</body>
+</html>
